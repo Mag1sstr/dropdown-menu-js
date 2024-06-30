@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: #ffffff;
+}
+.drop-item {
+  /* opacity: 1; */
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: crimson;
+  color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: padding-left 0.3s;
+}
+.drop-item:hover {
+  padding-left: 15px;
+}
+.drop {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.border {
+  width: 10px;
+  height: 100%;
+  background-color: rgb(139, 17, 41);
+}
+
+.items {
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  visibility: hidden ;
+  opacity: 0;
+  /* transition: .5s; */
+}
+.drop.open .items{
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+  transition: margin-top .5s;
+}
+.parent {
+  position: relative;
+}
+.parent .items{
+  visibility: hidden !important;
+  opacity: 0;
+  left: 100%;
+  top: 10px;
+}
+.open {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
+  transition: 0.5s;
+}
+.parent.sec-open .items {
+  top: 0px;
+  visibility: visible !important;
+  opacity: 1;
+  transition: 0.5s;
+  left: 100%;
+}
+/* ------------------------------------------------------------ */
+/* .menu {
+  width: 300px;
+  padding: 20px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: crimson;
+}
+.menu-item h3 {
+  margin-left: 20px;
+  transition: 0.2s;
+}
+.menu-item:hover h3 {
+  margin-left: 30px;
+}
+.border {
+  width: 10px;
+  height: 100%;
+  background-color: rgb(139, 17, 41);
+} */
+
+/* .menu-second {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.menu-first:hover .menu-second {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+.menu-first:hover .menu-item {
+  border-bottom: 1px solid rgb(99, 0, 20);
+} */
+/* item1 */
+/* .border1 {
+  width: 10px;
+  height: 100%;
+  background-color: rgb(139, 17, 41);
+}
+.menu-item1:hover .border1 {
+  width: 10px;
+  height: 100%;
+  background-color: green;
+}
+.menu-item1 {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: crimson;
+}
+.menu-item1 h3 {
+  margin-left: 20px;
+  transition: 0.2s;
+}
+.menu-item1:hover h3 {
+  margin-left: 30px;
+}
+.menu-first:hover .menu-item,
+.menu-item1 {
+  border-bottom: 1px solid rgb(99, 0, 20);
+} */
+/* catolog */
+/* .catolog {
+  position: relative;
+}
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  width: 290px;
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  transition: 0.5s;
+}
+.catolog:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+.procesor {
+  position: relative;
+}
+.submenu-procesor {
+  visibility: hidden;
+  opacity: 0;
+  width: 300px;
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  transition: 0.5s;
+}
+.procesor:hover .submenu-procesor {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+} */
